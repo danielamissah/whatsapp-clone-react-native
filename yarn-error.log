@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @react-navigation/
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @react-navigation/react-native-tab-view
 
 PATH: 
   C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\OpenJDK\openjdk-8u275-b01\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Users\Daniel Kwame Amissah\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\Daniel Kwame Amissah\.dotnet\tools;C:\Users\Daniel Kwame Amissah\AppData\Roaming\npm;C:\Users\Daniel Kwame Amissah\AppData\Local\Android\Sdk\platform-tools;C:\Users\Daniel Kwame Amissah\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Daniel Kwame Amissah\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\Daniel Kwame Amissah\AppData\Roaming\Composer\vendor\bin;C:\Users\Daniel Kwame Amissah\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin
@@ -14,8 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@react-navigation%2f: Request "https://registry.yarnpkg.com/@react-navigation%2f" returned a 405
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66106:18)
+  Error: https://registry.yarnpkg.com/@react-navigation%2freact-native-tab-view: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
       at Request.emit (node:events:376:20)
       at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
