@@ -39,7 +39,7 @@ function RootNavigator() {
         headerTintColor: Colors.light.background,
         headerTitleAlign: 'left',
         headerTitleStyle: {
-          fontWeight: 'bold',
+          //fontWeight: 'bold',
         }
       }
       }>
