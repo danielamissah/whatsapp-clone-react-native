@@ -81,3 +81,5 @@ buck-out/
 web-build/
 
 # @end expo-cli
+
+python-log.txt
