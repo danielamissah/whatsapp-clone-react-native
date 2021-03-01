@@ -1,12 +1,13 @@
+// Replace AWS S3 endpoints below
 export default [{
   id: '1',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u2',
-    name: 'Lukas',
+    name: 'Derrick',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
   }],
   lastMessage: {
@@ -18,11 +19,11 @@ export default [{
   id: '2',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u3',
-    name: 'Daniil',
+    name: 'Agnes',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg',
   }],
   lastMessage: {
@@ -34,27 +35,27 @@ export default [{
   id: '3',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u4',
-    name: 'Alex',
+    name: 'Shawarma',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.png',
   }],
   lastMessage: {
     id: 'm3',
-    content: 'Hi, Vadim.',
+    content: 'Hi, Morino.',
     createdAt: '2020-10-02T14:48:00.000Z',
   }
 }, {
   id: '4',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u5',
-    name: 'Vlad',
+    name: 'Troy',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg',
   }],
   lastMessage: {
@@ -66,11 +67,11 @@ export default [{
   id: '5',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u6',
-    name: 'Elon Musk',
+    name: 'Ayetown',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/5.jpg',
   }],
   lastMessage: {
@@ -82,11 +83,11 @@ export default [{
   id: '6',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u7',
-    name: 'Adrian',
+    name: 'Chief',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/6.png',
   }],
   lastMessage: {
@@ -98,11 +99,11 @@ export default [{
   id: '7',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u8',
-    name: 'Borja',
+    name: 'Sagoe Pyne',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/7.png',
   }],
   lastMessage: {
@@ -114,11 +115,11 @@ export default [{
   id: '8',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u9',
-    name: 'Mom',
+    name: 'Old Girl',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/8.png',
   }],
   lastMessage: {
@@ -130,11 +131,11 @@ export default [{
   id: '9',
   users: [{
     id: 'u1',
-    name: 'Vadim',
+    name: 'Morino',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u10',
-    name: 'Angelina Jolie',
+    name: 'Najat',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/9.png',
   }],
   lastMessage: {
