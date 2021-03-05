@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add moment
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-appearance
 
 PATH: 
   C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\OpenJDK\openjdk-8u275-b01\bin;C:\xampp\php;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Users\Daniel Kwame Amissah\AppData\Local\Android\Sdk\tools;C:\Users\Daniel Kwame Amissah\AppData\Local\python2\scripts;C:\Users\Daniel Kwame Amissah\AppData\Local\python2;C:\Users\Daniel Kwame Amissah\AppData\Local\Android\Sdk\tools;C:\Users\Daniel Kwame Amissah\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\Daniel Kwame Amissah\AppData\Roaming\npm;C:\Users\Daniel Kwame Amissah\AppData\Local\Android\Sdk\platform-tools;C:\Users\Daniel Kwame Amissah\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Daniel Kwame Amissah\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\Daniel Kwame Amissah\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.26.35:443
+  Error: connect ETIMEDOUT 104.16.22.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1138:16)
 
 npm manifest: 
@@ -50,8 +50,10 @@ npm manifest:
       "expo-linking": "~2.0.0",
       "expo-splash-screen": "~0.8.0",
       "expo-status-bar": "~1.0.3",
+      "expo-updates": "~0.4.0",
       "expo-web-browser": "~8.6.0",
       "graphql": "^15.5.0",
+      "moment": "^2.29.1",
       "react": "16.13.1",
       "react-dom": "16.13.1",
       "react-native": "~0.63.4",
@@ -60,20 +62,19 @@ npm manifest:
       "react-native-safe-area-context": "3.1.9",
       "react-native-screens": "~2.15.0",
       "react-native-tab-view": "^2.15.2",
+      "react-native-unimodules": "~0.12.0",
       "react-native-web": "~0.13.12",
-      "twilio": "^3.57.0",
-      "expo-updates": "~0.4.0",
-      "react-native-unimodules": "~0.12.0"
+      "twilio": "^3.57.0"
     },
     "devDependencies": {
       "@babel/core": "~7.9.0",
       "@types/react": "~16.9.35",
       "@types/react-native": "~0.63.2",
-      "jest-expo": "~40.0.0",
-      "typescript": "~4.0.0",
       "babel-jest": "~25.2.6",
       "jest": "~25.2.6",
-      "react-test-renderer": "~16.13.1"
+      "jest-expo": "~40.0.0",
+      "react-test-renderer": "~16.13.1",
+      "typescript": "~4.0.0"
     },
     "private": true,
     "name": "WhatsAppClone",
@@ -8471,6 +8472,11 @@ Lockfile:
     integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
     dependencies:
       minimist "^1.2.5"
+  
+  moment@^2.29.1:
+    version "2.29.1"
+    resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
+    integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
   
   ms@2.0.0:
     version "2.0.0"
