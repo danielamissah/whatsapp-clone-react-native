@@ -21,17 +21,13 @@ const styles = StyleSheet.create({
 
 
     },
-
     message: {
-
     },
 
     time: {
         alignSelf: "flex-end",
         color: 'grey'
-
     }
-
 });
 
 export default styles;
