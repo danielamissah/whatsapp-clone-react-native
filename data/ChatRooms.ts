@@ -109,7 +109,7 @@ export default [{
   lastMessage: {
     id: 'm7',
     content: 'How are you doing?',
-    createdAt: '2020-10-02T15:40:00.000Z',
+    createdAt: '2021-03-06T15:40:00.000Z',
   }
 }, {
   id: '8',
@@ -125,7 +125,7 @@ export default [{
   lastMessage: {
     id: 'm8',
     content: 'Dear, did you eat?',
-    createdAt: '2020-09-27T15:40:00.000Z',
+    createdAt: '2021-03-06T15:40:00.000Z',
   }
 }, {
   id: '9',
@@ -141,6 +141,6 @@ export default [{
   lastMessage: {
     id: 'm9',
     content: 'Meet me at the same place',
-    createdAt: '2020-09-25T15:40:00.000Z',
+    createdAt: '2021-03-06T15:40:00.000Z',
   },
 }]

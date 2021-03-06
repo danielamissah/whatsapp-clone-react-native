@@ -6,7 +6,7 @@ import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
 
-//import { AppearanceProvider } from 'react-native-appearance';
+import { AppearanceProvider } from 'react-native-appearance';
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
@@ -16,10 +16,14 @@ export default function App() {
     return null;
   } else {
     return (
-      <SafeAreaProvider>
+      <AppearanceProvider>
+        <SafeAreaProvider>
         <Navigation colorScheme={colorScheme} />
         <StatusBar />
       </SafeAreaProvider>
+
+      </AppearanceProvider>
+      
     );
   }
 }

@@ -1,4 +1,7 @@
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
+// import { <strong> Provider as PaperProvider, </strong>
+//          DefaultTheme as PaperDefaultTheme,
+//          DarkTheme as PaperDarkTheme, } from '@react-native-paper';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { ColorSchemeName, View } from 'react-native';
