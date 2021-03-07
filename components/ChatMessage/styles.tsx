@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     name: {
         color: Colors.light.tint,
         fontWeight: 'bold',
-       // marginVertical: 1,
         marginBottom: 2
 
 
