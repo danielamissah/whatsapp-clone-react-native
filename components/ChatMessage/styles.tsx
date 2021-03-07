@@ -17,9 +17,8 @@ const styles = StyleSheet.create({
         color: Colors.light.tint,
         fontWeight: 'bold',
         marginBottom: 2
-
-
     },
+    
     message: {
     },
 
