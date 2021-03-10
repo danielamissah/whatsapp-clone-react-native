@@ -3,5 +3,4 @@ type User @model {
   name: String!
   imageUri: String
   status: String
-  
 }
