@@ -8,6 +8,11 @@ import Navigation from './navigation';
 
 import { AppearanceProvider } from 'react-native-appearance';
 
+// import Amplify from 'aws-amplify'
+// import config from './aws-exports'
+// Amplify.configure(config)
+
+
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
