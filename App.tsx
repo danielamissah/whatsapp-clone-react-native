@@ -16,6 +16,7 @@ import config from './src/aws-exports';
 Amplify.configure(config);
 
 const randomImages =[
+  //Replace default images below
   'https://hieumobile.com/wp-content/uploads/avatar-among-us-2.jpg',
   'https://hieumobile.com/wp-content/uploads/avatar-among-us-3.jpg',
   'https://hieumobile.com/wp-content/uploads/avatar-among-us-6.jpg',
