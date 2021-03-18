@@ -8,6 +8,7 @@ import ChatMessage from '../components/ChatMessage';
 import InputBox from '../components/InputBox';
 import { API, graphqlOperation, Auth } from 'aws-amplify';
 import { messagesByChatRoom } from '../src/graphql/queries';
+import { onCreateMessage } from '../src/graphql/subscriptions';
 
 const ChatRoomScreen = () => {
     const [messages, setMessages] = useState([]);
@@ -38,6 +39,26 @@ const ChatRoomScreen = () => {
         getMyId();
 
     }, []);
+
+    useEffect(() => {
+        const subscription = API.graphql(
+            graphqlOperation(onCreateMessage).subscribe({
+                next: (data) => {
+                    const newMessage = data.value.data.onCreateMessage;
+                    if(newMessage.chatRoomID !== route.params.id){
+                        return;
+                    }
+
+                    setMessages([newMessage, ...messages]);
+
+                }
+            })
+        );
+
+        return () => subscription.unsubscribe();
+
+
+    }, [])
     return(
         <ImageBackground style={{width: '100%', height: '100%'}} source={BG}>
             <FlatList 
