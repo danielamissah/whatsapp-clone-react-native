@@ -13,64 +13,59 @@ import { onCreateMessage } from '../src/graphql/subscriptions';
 const ChatRoomScreen = () => {
     const [messages, setMessages] = useState([]);
     const [myId, setMyId] = useState(null);
-
     const route = useRoute();
-    useEffect(() => {
-        const fetchMessages = async () => {
-            const messagesData = await API.graphql(
-                graphqlOperation(
-                    messagesByChatRoom, {
-                        chatRoomID: route.params.id,
-                        sortDirection: "DESC",
 
-                    }
-                )
+    const fetchMesssages = async () => {
+        const messagesData = await API.graphql(
+            graphqlOperation(
+                messagesByChatRoom, {
+                    chatRoomID: route.params.id,
+                    sortDirection: "DESC",
+                }
             )
-            setMessages(messagesData.data.messagesByChatRoom.items);
-        }
-        fetchMessages();
+        )
+        setMessages(messagesData.data.messagesByChatRoom.items);
+    }
 
+    useEffect(() => {
+        fetchMesssages();
     }, [])
+
     useEffect(() => {
         const getMyId = async () => {
-            const userInfo = await Auth.currentAuthenticatedUser();
+            const userInfo = await API.Auth.currentAuthenticatedUser();
             setMyId(userInfo.attributes.sub);
         }
         getMyId();
-
-    }, []);
+    }, [])
 
     useEffect(() => {
         const subscription = API.graphql(
-            graphqlOperation(onCreateMessage).subscribe({
+            graphqlOperation(onCreateMessage)).subscribe({
                 next: (data) => {
                     const newMessage = data.value.data.onCreateMessage;
                     if(newMessage.chatRoomID !== route.params.id){
+                        console.log("Message belongs to another room")
                         return;
                     }
-
-                    setMessages([newMessage, ...messages]);
-
+                    fetchMesssages();
                 }
-            })
-        );
+            });
 
-        return () => subscription.unsubscribe();
-
-
+            return () => subscription.unsubscribe();
     }, [])
+    console.log(`messages in state: ${messages.length}`);
     return(
         <ImageBackground style={{width: '100%', height: '100%'}} source={BG}>
-            <FlatList 
-        data = {messages}
-        renderItem = {({ item }) =>  <ChatMessage myId = {myId} message = {item} />}
-        inverted
-        />
-
-        <InputBox chatRoomID = {route.params.id}/>
-        
+            <FlatList
+                data = {messages}
+                renderItem = {({ item }) => <ChatMessage myId = {myId} message={item}/>}
+                inverted
+            />
+            <InputBox chatRoomID = {route.params.id}/>
         </ImageBackground>
     );
+
 }
 
 export default ChatRoomScreen;
