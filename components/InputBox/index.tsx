@@ -5,7 +5,7 @@ import { Entypo,
         MaterialIcons
     } from '@expo/vector-icons';
 import React, { useEffect, useState } from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, KeyboardAvoidingView, Platform } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 import styles from './styles';
 import { API, Auth, graphqlOperation } from 'aws-amplify';
@@ -85,7 +85,10 @@ const InputBox = ( props ) => {
         }
     }
     return(
-        <View style = {styles.container}>
+        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"}
+        keyboardVerticalOffset={100}
+        style={styles.container}>
+            <View style = {styles.container}>
             <View style = {styles.mainContainer}>
                 <FontAwesome5 name="laugh-beam" size ={24} color= "grey" style={styles.icon}/>
                 <TextInput 
@@ -108,8 +111,12 @@ const InputBox = ( props ) => {
                 }
             </View>
             </TouchableOpacity>
+            </View>
+
+        </KeyboardAvoidingView>
+        
             
-        </View>
+       
     )
 }
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Text, FlatList, ImageBackground } from 'react-native';
+import { Text, FlatList, ImageBackground, KeyboardAvoidingView, Platform } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 //import { FlatList } from 'react-native-gesture-handler';
 import BG from '../assets/images/BG.png';
@@ -9,6 +9,7 @@ import InputBox from '../components/InputBox';
 import { API, graphqlOperation, Auth } from 'aws-amplify';
 import { messagesByChatRoom } from '../src/graphql/queries';
 import { onCreateMessage } from '../src/graphql/subscriptions';
+import styles from '../components/ChatListItem/style';
 
 const ChatRoomScreen = () => {
     const [messages, setMessages] = useState([]);
@@ -56,7 +57,9 @@ const ChatRoomScreen = () => {
     }, [])
     console.log(`messages in state: ${messages.length}`);
     return(
-        <ImageBackground style={{width: '100%', height: '100%'}} source={BG}>
+        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding": "height"} 
+        style={{width: '100%', height: '100%'}}>
+             <ImageBackground style={{width: '100%', height: '100%'}} source={BG}>
             <FlatList
                 data = {messages}
                 renderItem = {({ item }) => <ChatMessage myId = {myId} message={item}/>}
@@ -64,6 +67,8 @@ const ChatRoomScreen = () => {
             />
             <InputBox chatRoomID = {route.params.id}/>
         </ImageBackground>
+        </KeyboardAvoidingView>
+
     );
 
 }
